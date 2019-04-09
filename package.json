@@ -6,6 +6,20 @@
   "scripts": {
     "test": "jest"
   },
+  {
+  "name": "continuous-test-code-coverage-guide",
+  "scripts": {
+    "start": "webpack",
+    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
+  },
+{
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
+  }
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
